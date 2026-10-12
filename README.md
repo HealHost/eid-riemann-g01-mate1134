@@ -1,10 +1,11 @@
 # Suma de Riemann con Manim
 
-**Curso:** MATE1134 – Cálculo Intermedio, Grupo 1
-**Integrantes:** Sakin Contreras, Kevin Inalaf, Javier Gutiérrez (GitHub: COMPLETAR)
-**Tema:** Construcción de una suma de Riemann
-**Pregunta central:** ¿Cómo se transforma una región bajo una curva en una suma de áreas de rectángulos?
-**Ejemplo:** f(x) = x² + 1 en [0, 2], con n = 4, 8 y 16.
+- **Curso:** MATE1134 – Cálculo Intermedio, Grupo 1
+- **Integrantes:** Sakin Contreras, Kevin Inalaf, Javier Gutiérrez
+- **GitHub:** COMPLETAR
+- **Tema:** Construcción de una suma de Riemann
+- **Pregunta central:** ¿Cómo se transforma una región bajo una curva en una suma de áreas de rectángulos?
+- **Ejemplo:** f(x) = x² + 1 en [0, 2], con n = 4, 8 y 16.
 
 ## Versiones
 Python 3.12 y Manim Community 0.22.0.
