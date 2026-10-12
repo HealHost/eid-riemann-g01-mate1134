@@ -12,19 +12,26 @@ Python 3.12 y Manim Community 0.22.0.
 
 ## Instalación
 
-**1. Instalar FFmpeg (programa del sistema)**
+**1. Programas del sistema (no se instalan con uv ni pip)**
 
 Fedora:
 ```bash
+sudo dnf install pkg-config cairo-devel pango-devel python3-devel gcc
 sudo dnf install ffmpeg-free
+sudo dnf install texlive-scheme-basic texlive-dvisvgm
 ```
 
 Windows (PowerShell):
 ```powershell
 winget install ffmpeg
 ```
+Para LaTeX en Windows, instalar MiKTeX (https://miktex.org), reiniciar la terminal y configurar "instalar paquetes faltantes: siempre".
 
-Comprobar: `ffmpeg -version`
+Comprobar:
+```bash
+ffmpeg -version
+latex --version
+```
 
 **2. Instalar Python y Manim**
 
@@ -58,4 +65,4 @@ manim -pqh main.py VideoCompleto
 - `guion.md`: narración y cálculos.
 
 ## Referencias y declaración de IA
-Ver el código de ética (entregado en Blackboard)
+Ver el código de ética (entregado en Blackboard).
