@@ -1,0 +1,33 @@
+import sys
+from pathlib import Path
+sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
+
+from manim import *
+from config import f, A, B, N_VALORES, COLOR_CURVA, COLOR_RECT, make_axes
+
+
+def animar(scene):
+    ejes = make_axes().shift(DOWN * 0.5)
+    curva = ejes.plot(f, x_range=[A, B], color=COLOR_CURVA)
+    scene.play(Create(ejes), Create(curva))
+
+    # Momento 1: n = 4
+    n = N_VALORES[0]
+    dx = (B - A) / n                      # ancho de cada rectángulo
+    suma = sum(f(A + (i + 0.5) * dx) * dx for i in range(n))   # punto medio
+
+    rects = ejes.get_riemann_rectangles(
+        curva, x_range=[A, B], dx=dx,
+        input_sample_type="center",       # altura en el punto medio
+        color=COLOR_RECT, fill_opacity=0.6,
+    )
+    texto = MathTex(rf"n = {n},\quad \Delta x = {dx},\quad S_n = {suma}").to_edge(UP)
+
+    scene.play(Create(rects), Write(texto))
+    scene.wait(2)
+    scene.play(FadeOut(*scene.mobjects))
+
+
+class Escena3(Scene):
+    def construct(self):
+        animar(self)
