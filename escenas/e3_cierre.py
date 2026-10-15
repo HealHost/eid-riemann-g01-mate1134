@@ -45,7 +45,7 @@ def animar(scene):
 
     scene.play(FadeOut(*scene.mobjects))
 
-    # Momento 5: respuesta a la pregunta central
+    # respuesta a la pregunta central
     titulo = Text("Respuesta a la pregunta central", font_size=36, color=YELLOW)
     lineas = VGroup(
         Text("1. Dividimos el intervalo en n partes iguales.", font_size=28),
@@ -67,12 +67,13 @@ def animar(scene):
 
     scene.play(FadeOut(*scene.mobjects))      # limpia al terminar
 
-        # Momento 6: créditos
+    # créditos
     titulo_cred = Text("Créditos", font_size=40, color=YELLOW)
     lineas_cred = VGroup(
         Text("Integrantes: Sakin Contreras, Kevin Inalaf, Javier Gutiérrez", font_size=24),
-        Text("Fuente 1: COMPLETAR", font_size=24),
-        Text("Fuente 2: COMPLETAR", font_size=24),
+        Text("Apunte base: Introducción a la integral (Cálculo Intermedio)", font_size=24),
+        Text("Fuente 1: Khan Academy en Español, Sumas de Riemann de punto medio (2017)", font_size=24),
+        Text("Fuente 2: MateFacil, Suma de Riemann ¿Qué es? ¿De dónde sale? (2021)", font_size=24),
         Text("Manim Community v0.22.0, documentación oficial", font_size=24),
         Text("Uso de IA: Claude (Anthropic) y otras IAs, para estructura del proyecto", font_size=24),
         Text("y apoyo en código.", font_size=24),
