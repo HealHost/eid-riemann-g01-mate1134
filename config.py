@@ -27,7 +27,7 @@ def make_axes():
     return ejes
 
 if __name__ == "__main__":
-    exacto = 14 / 3 #referencia
+    exacto = 14 / 3
     for n in N_VALORES:
         dx = (B - A) / n
         puntos = [A + (i - 0.5) * dx for i in range(1, n + 1)]
