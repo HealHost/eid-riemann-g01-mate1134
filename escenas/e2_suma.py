@@ -7,7 +7,7 @@ from config import f, A, B, N_BASE, COLOR_CURVA, COLOR_RECT, COLOR_PUNTO, make_a
 
 
 def animar(scene):
-    #datos para calcular las areas de los rectangulos.
+    #datos para calcular las áreas de los rectángulos.
     n = N_BASE
     dx = (B - A) / n
     muestras = [A + (i + 0.5) * dx for i in range(n)]
@@ -23,7 +23,7 @@ def animar(scene):
     scene.play(Create(ejes), Create(curva), run_time=3)
     scene.wait(5)
 
-    titulo = Text("De la curva a una suma de areas", font_size=32).to_edge(UP)
+    titulo = Text("De la curva a una suma de áreas", font_size=32).to_edge(UP)
     scene.play(Write(titulo), run_time=1.5)
     scene.wait(4)
 
@@ -39,7 +39,7 @@ def animar(scene):
         Text("Subintervalo: [0, 0.5]", font_size=23),
         Text("Punto medio: x₁* = 0.25", font_size=23),
         Text("Altura: f(0.25) = 1.0625", font_size=23),
-        Text("Area = altura por ancho", font_size=23, color=YELLOW),
+        Text("Área = altura por ancho", font_size=23, color=YELLOW),
         Text("f(x₁*) · Δx = 1.0625 · 0.5 = 0.53125", font_size=22),
     ).arrange(DOWN, aligned_edge=LEFT, buff=0.16).to_corner(UR).shift(DOWN * 0.6)
     scene.play(Create(rect_uno), FadeIn(muestra_uno), run_time=2)
@@ -47,14 +47,14 @@ def animar(scene):
     scene.wait(14)
 
     explicacion = Text(
-        "xᵢ* es el punto muestra de cada subintervalo; aqui elegimos su punto medio.",
+        "xᵢ* es el punto muestra de cada subintervalo; aquí elegimos su punto medio.",
         font_size=22, line_spacing=1.2,
     ).to_edge(DOWN).shift(UP * 0.15)
     scene.play(Write(explicacion), run_time=2)
     scene.wait(9)
     scene.play(FadeOut(textos_uno), FadeOut(explicacion), FadeOut(rect_uno), FadeOut(muestra_uno), run_time=1.5)
 
-    #los cuatro rectangulos usan los puntos medios de config.py (n=4)
+    #los cuatro rectángulos usan los puntos medios de config.py (n=4)
     rects = ejes.get_riemann_rectangles(
         curva, x_range=[A, B], dx=dx,
         input_sample_type="center", color=COLOR_RECT, fill_opacity=0.6,
@@ -71,7 +71,7 @@ def animar(scene):
         DOWN, aligned_edge=LEFT, buff=0.12
     ).to_corner(UR).shift(DOWN * 0.55)
     
-    encabezado = Text("n = 4: cada termino es el área de un rectangulo", font_size=21).next_to(detalle, UP, buff=0.2)
+    encabezado = Text("n = 4: cada término es el área de un rectángulo", font_size=21).next_to(detalle, UP, buff=0.2)
     
     scene.play(Write(encabezado), Write(detalle), run_time=3)
     scene.wait(14)
@@ -86,9 +86,9 @@ def animar(scene):
     scene.play(Write(formula), Write(suma_txt), run_time=2.5)
     scene.wait(11)
 
-    #comparamos la suma con el area exacta.
+    #comparamos la suma con el área exacta.
     comparacion = Text(
-        "Area exacta = 14/3 ≈ 4.6667. S₄ = 4.625 es una aproximacion levemente menor.",
+        "Área exacta = 14/3 ≈ 4.6667. S₄ = 4.625 es una aproximación levemente menor.",
         font_size=21,
     ).to_edge(DOWN)
     
