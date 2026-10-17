@@ -33,7 +33,7 @@ def animar(scene):
 
     scene.play(Create(e1_linea_a), Create(e1_linea_b))
     scene.play(Write(e1_intervalo))
-    scene.wait(20)
+    scene.wait(17)
 
     #partición n en subintervalos
     e1_n = N_BASE
@@ -54,9 +54,9 @@ def animar(scene):
    
     scene.play(LaggedStart(*[FadeIn(p) for p in e1_puntos], lag_ratio=0.3))
     scene.play(LaggedStart(*[Write(t) for t in e1_etiquetas], lag_ratio=0.3))
-    scene.wait(15)
+    scene.wait(8)
     scene.play(LaggedStart(*[Create(c) for c in e1_cortes], lag_ratio=0.3))
-    scene.wait(15)
+    scene.wait(8)
 
     #fórmulas de la partición
     e1_f_dx = MathTex(r"\Delta x = \frac{b-a}{n} = \frac{2-0}{4} = 0{,}5", font_size=34)
@@ -65,9 +65,9 @@ def animar(scene):
     e1_formulas.next_to(e1_intervalo, DOWN)
 
     scene.play(Write(e1_f_dx))
-    scene.wait(15)
+    scene.wait(10)
     scene.play(Write(e1_f_xi))
-    scene.wait(15)
+    scene.wait(10)
 
     scene.play(FadeOut(*scene.mobjects))
     scene.wait(2)
