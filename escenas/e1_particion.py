@@ -20,7 +20,7 @@ def animar(scene):
     scene.wait(6)
 
     #pregunta central e intervalo [a, b]
-    e1_pregunta = Text("¿Cómo se transforma una región bajo una curva en una suma de áreas de rectángulos?", font_size= 30,).to_edge(UP)
+    e1_pregunta = Text("¿Cómo se transforma una región bajo una curva en una suma de áreas de rectángulos?", font_size= 20,).to_edge(UP)
     scene.play (Write(e1_pregunta))
     scene.wait(8)
 
