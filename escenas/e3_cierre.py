@@ -33,7 +33,7 @@ def animar(scene):
             )
         rects = rects_nuevo
         texto = texto_nuevo
-        scene.wait(2)
+        scene.wait(14)
 
     etiqueta = Text("Área exacta:", font_size=32)
     exacto = MathTex(r"\frac{14}{3} \approx 4.6667")
@@ -41,12 +41,12 @@ def animar(scene):
     grupo.next_to(texto, DOWN)
 
     scene.play(Write(grupo))
-    scene.wait(3)
+    scene.wait(10)
 
     scene.play(FadeOut(*scene.mobjects))
 
     # respuesta a la pregunta central
-    titulo = Text("Respuesta a la pregunta central", font_size=36, color=YELLOW)
+    titulo = Text("¿Cómo se transforma una región bajo una curva en una suma de áreas de rectángulos?", font_size=36, color=YELLOW)
     lineas = VGroup(
         Text("1. Dividimos el intervalo en n partes iguales.", font_size=28),
         Text("2. En cada parte levantamos un rectángulo", font_size=28),
@@ -62,7 +62,7 @@ def animar(scene):
     scene.play(Write(titulo))
     for parte in (lineas, formula, cierre):
         scene.play(Write(parte))
-        scene.wait(1)
+        scene.wait(12)
     scene.wait(3)
 
     scene.play(FadeOut(*scene.mobjects))      # limpia al terminar
