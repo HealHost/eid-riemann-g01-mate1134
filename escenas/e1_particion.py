@@ -17,12 +17,12 @@ def animar(scene):
     scene.play(Create(e1_ejes))
     scene.play(Create(e1_curva))
     scene.play(Create(e1_region))
-    scene.wait(3)
+    scene.wait(6)
 
     #pregunta central e intervalo [a, b]
-    e1_pregunta = Text("¿Cómo se transforma una región bajo una curva en una suma de áreas de rectángulos?", font_size= 30,).to_edge(UP)
+    e1_pregunta = Text("¿Cómo se transforma una región bajo una curva en una suma de áreas de rectángulos?", font_size= 20,).to_edge(UP)
     scene.play (Write(e1_pregunta))
-    scene.wait(4)
+    scene.wait(8)
 
     #rectas verticales punteadas a y b 
     e1_linea_a = e1_ejes.get_vertical_line(e1_ejes.i2gp(A, e1_curva))
@@ -33,7 +33,7 @@ def animar(scene):
 
     scene.play(Create(e1_linea_a), Create(e1_linea_b))
     scene.play(Write(e1_intervalo))
-    scene.wait(3)
+    scene.wait(20)
 
     #partición n en subintervalos
     e1_n = N_BASE
@@ -54,9 +54,9 @@ def animar(scene):
    
     scene.play(LaggedStart(*[FadeIn(p) for p in e1_puntos], lag_ratio=0.3))
     scene.play(LaggedStart(*[Write(t) for t in e1_etiquetas], lag_ratio=0.3))
-    scene.wait(3)
+    scene.wait(15)
     scene.play(LaggedStart(*[Create(c) for c in e1_cortes], lag_ratio=0.3))
-    scene.wait(3)
+    scene.wait(15)
 
     #fórmulas de la partición
     e1_f_dx = MathTex(r"\Delta x = \frac{b-a}{n} = \frac{2-0}{4} = 0{,}5", font_size=34)
@@ -65,12 +65,12 @@ def animar(scene):
     e1_formulas.next_to(e1_intervalo, DOWN)
 
     scene.play(Write(e1_f_dx))
-    scene.wait(4)
+    scene.wait(15)
     scene.play(Write(e1_f_xi))
-    scene.wait(4)
+    scene.wait(15)
 
     scene.play(FadeOut(*scene.mobjects))
-    scene.wait(1)
+    scene.wait(2)
 
 
 
