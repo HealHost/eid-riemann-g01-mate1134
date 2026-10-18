@@ -1,6 +1,20 @@
 #Sakin Contreras
 
 #Kevin Inalaf
+---Introducción---
+Hola, soy Kevin Inalaf. Ahora veremos cómo una región bajo una curva se transforma en una suma de áreas de rectángulos.
+
+---Un solo rectángulo---
+Empecemos con un solo rectángulo. Su ancho es delta x igual a cero coma cinco, y va de cero a cero coma cinco. Como punto muestra usamos el punto medio, x sub uno asterisco, que vale cero coma veinticinco. La altura es el valor de la curva ahí: cero coma veinticinco al cuadrado más uno da uno coma cero seis dos cinco. El área es altura por ancho: uno coma cero seis dos cinco por cero coma cinco da cero coma cinco tres uno dos cinco.
+
+---Los cuatro rectángulos---
+Hacemos lo mismo en los cuatro subintervalos. Los puntos medios son cero coma veinticinco, cero coma setenta y cinco, uno coma veinticinco y uno coma setenta y cinco, y las alturas van de uno coma cero seis dos cinco a cuatro coma cero seis dos cinco. Multiplicando por cero coma cinco, las áreas son cero coma cinco tres uno dos cinco, cero coma siete ocho uno dos cinco, uno coma dos ocho uno dos cinco y dos coma cero tres uno dos cinco. Cada término es el área de un rectángulo.
+
+---La suma S sub 4---
+Sumando las cuatro áreas obtenemos S cuatro igual a cuatro coma seiscientos veinticinco. Esta es la suma de Riemann: la suma de f de x sub i asterisco por delta x.
+
+---Comparación con el área exacta---
+El área exacta es catorce tercios, aproximadamente cuatro coma seis seis seis siete. Entonces cuatro coma seiscientos veinticinco es una aproximación, y queda levemente por debajo.
 
 #Javier Gutierrez
 ---n = 4---
