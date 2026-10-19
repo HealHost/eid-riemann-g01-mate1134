@@ -1,20 +1,42 @@
 # Suma de Riemann con Manim
 
 - **Curso:** MATE1134 – Cálculo Intermedio, Grupo 1
-- **Integrantes:** Sakin Contreras ([@Sakin-UCT](https://github.com/Sakin-UCT)), Kevin Inalaf ([@Kevvyh](https://github.com/Kevvyh)), Javier Gutiérrez ([@HealHost](https://github.com/HealHost))
+- **Integrantes:** Sakin Contreras, Kevin Inalaf, Javier Gutiérrez
+- **GitHub:** COMPLETAR
 - **Tema:** Construcción de una suma de Riemann
 - **Pregunta central:** ¿Cómo se transforma una región bajo una curva en una suma de áreas de rectángulos?
-- **Ejemplo:** f(x) = x² + 1 en [0, 2], con n = 4, 8 y 16 (punto medio).
+- **Ejemplo:** f(x) = x² + 1 en [0, 2], con n = 4, 8 y 16.
 
 ## Versiones
 Python 3.12 y Manim Community 0.22.0.
 
-## Instalación (Windows, PowerShell)
-Instalar FFmpeg y LaTeX (MiKTeX, con "instalar paquetes faltantes: siempre"):
+## Instalación
+
+**1. Instalar FFmpeg (programa del sistema)**
+
+Fedora:
+```bash
+sudo dnf install ffmpeg-free
+```
+
+Windows (PowerShell):
 ```powershell
 winget install ffmpeg
 ```
-Luego, desde la carpeta del repositorio:
+
+Comprobar: `ffmpeg -version`
+
+**2. Instalar Python y Manim**
+
+Linux:
+```bash
+uv python install 3.12
+uv venv --python 3.12
+source .venv/bin/activate
+uv pip install -r requirements.txt
+```
+
+Windows (PowerShell):
 ```powershell
 uv python install 3.12
 uv venv --python 3.12
@@ -23,13 +45,17 @@ uv pip install -r requirements.txt
 ```
 
 ## Ejecución
-```powershell
+Desde la carpeta raíz, con el entorno activo:
+
+```bash
 manim -pqh main.py VideoCompleto
 ```
 
+## Archivos
+- `main.py`: une las tres escenas.
+- `config.py`: función, intervalo y estilo compartido.
+- `escenas/`: una escena por integrante.
+- `guion.md`: narración y cálculos.
+
 ## Referencias y declaración de IA
-- Apunte base: *Introducción a la integral*, Cálculo Intermedio.
-- Khan Academy en Español, *Sumas de Riemann de punto medio* (video).
-- MateFacil, *Suma de Riemann ¿Qué es? ¿De dónde sale?* (video).
-- Documentación de Manim: https://docs.manim.community
-- IA: Claude (Anthropic), apoyo en estructura, ejemplo y código.
+Ver el código de ética (entregado en Blackboard)
