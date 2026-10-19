@@ -10,7 +10,6 @@ Empecemos con un solo rectángulo. Su ancho es delta x igual a cero coma cinco, 
 ---Los cuatro rectángulos---
 Hacemos lo mismo en los cuatro subintervalos. Los puntos medios son cero coma veinticinco, cero coma setenta y cinco, uno coma veinticinco y uno coma setenta y cinco, y las alturas van de uno coma cero seis dos cinco a cuatro coma cero seis dos cinco. Multiplicando por cero coma cinco, las áreas son cero coma cinco tres uno dos cinco, cero coma siete ocho uno dos cinco, uno coma dos ocho uno dos cinco y dos coma cero tres uno dos cinco. Cada término es el área de un rectángulo.
 
-<<<<<<< HEAD
 ---Las fórmulas---
 Delta x es el largo del intervalo dividido en n: dos menos cero, dividido en cuatro, da cero coma cinco. Ese es el ancho de cada subintervalo. Cada punto se calcula como A más i por delta x. Por ejemplo, x dos es cero más dos por cero coma cinco, que es uno. ahora pasamos con mi compañero kevin
 
@@ -24,8 +23,6 @@ Empecemos con un solo rectángulo. Su ancho es delta x igual a cero coma cinco, 
 ---Los cuatro rectángulos---
 Hacemos lo mismo en los cuatro subintervalos. Los puntos medios son cero coma veinticinco, cero coma setenta y cinco, uno coma veinticinco y uno coma setenta y cinco, y las alturas van de uno coma cero seis dos cinco a cuatro coma cero seis dos cinco. Multiplicando por cero coma cinco, las áreas son cero coma cinco tres uno dos cinco, cero coma siete ocho uno dos cinco, uno coma dos ocho uno dos cinco y dos coma cero tres uno dos cinco. Cada término es el área de un rectángulo.
 
-=======
->>>>>>> 7f2babbd7d286dc15b7d9486bf38af284a9520ce
 ---La suma S sub 4---
 Sumando las cuatro áreas obtenemos S cuatro igual a cuatro coma seiscientos veinticinco. Esta es la suma de Riemann: la suma de f de x sub i asterisco por delta x.
 
