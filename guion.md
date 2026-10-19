@@ -1,16 +1,16 @@
-#Sakin Contreras 
----Presentación---
-Hola, soy Sakin Contreras, y junto a mis compañeros vamos a explicar región que queda bajo la curva y igual a x al cuadrado más uno.
+#Sakin Contreras
 
----pregunta central ---
-La pregunta es: ¿cómo se transforma una región bajo una curva en una suma de áreas de rectángulos?
+#Kevin Inalaf
+---Introducción---
+Hola, soy Kevin Inalaf. Ahora veremos cómo una región bajo una curva se transforma en una suma de áreas de rectángulos.
 
----Intervalo y condición ---
-Vamos a trabajar entre x igual a cero y x igual a dos, estas dos rectas son el area en la que trabajaremos. En ese tramo la función es continua y nunca es negativa. El problema es que el borde de arriba es curvo, y no existe una fórmula de área como la del rectángulo.
+---Un solo rectángulo---
+Empecemos con un solo rectángulo. Su ancho es delta x igual a cero coma cinco, y va de cero a cero coma cinco. Como punto muestra usamos el punto medio, x sub uno asterisco, que vale cero coma veinticinco. La altura es el valor de la curva ahí: cero coma veinticinco al cuadrado más uno da uno coma cero seis dos cinco. El área es altura por ancho: uno coma cero seis dos cinco por cero coma cinco da cero coma cinco tres uno dos cinco.
 
----La partición ---
-Para resolverlo, dividimos el intervalo en n partes iguales. Estre proceso se llama partición. Aquí usamos n igual a cuatro, y marcamos los puntos x cero, x uno, x dos, x tres y x cuatro, que van desde cero hasta dos.Las rectas verticales cortan la región en cuatro subintervalos. Cada uno va de un punto al siguiente; por ejemplo, el primero va de x cero a x uno
+---Los cuatro rectángulos---
+Hacemos lo mismo en los cuatro subintervalos. Los puntos medios son cero coma veinticinco, cero coma setenta y cinco, uno coma veinticinco y uno coma setenta y cinco, y las alturas van de uno coma cero seis dos cinco a cuatro coma cero seis dos cinco. Multiplicando por cero coma cinco, las áreas son cero coma cinco tres uno dos cinco, cero coma siete ocho uno dos cinco, uno coma dos ocho uno dos cinco y dos coma cero tres uno dos cinco. Cada término es el área de un rectángulo.
 
+<<<<<<< HEAD
 ---Las fórmulas---
 Delta x es el largo del intervalo dividido en n: dos menos cero, dividido en cuatro, da cero coma cinco. Ese es el ancho de cada subintervalo. Cada punto se calcula como A más i por delta x. Por ejemplo, x dos es cero más dos por cero coma cinco, que es uno. ahora pasamos con mi compañero kevin
 
@@ -24,6 +24,8 @@ Empecemos con un solo rectángulo. Su ancho es delta x igual a cero coma cinco, 
 ---Los cuatro rectángulos---
 Hacemos lo mismo en los cuatro subintervalos. Los puntos medios son cero coma veinticinco, cero coma setenta y cinco, uno coma veinticinco y uno coma setenta y cinco, y las alturas van de uno coma cero seis dos cinco a cuatro coma cero seis dos cinco. Multiplicando por cero coma cinco, las áreas son cero coma cinco tres uno dos cinco, cero coma siete ocho uno dos cinco, uno coma dos ocho uno dos cinco y dos coma cero tres uno dos cinco. Cada término es el área de un rectángulo.
 
+=======
+>>>>>>> 7f2babbd7d286dc15b7d9486bf38af284a9520ce
 ---La suma S sub 4---
 Sumando las cuatro áreas obtenemos S cuatro igual a cuatro coma seiscientos veinticinco. Esta es la suma de Riemann: la suma de f de x sub i asterisco por delta x.
 
