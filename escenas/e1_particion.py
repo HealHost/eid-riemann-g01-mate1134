@@ -65,9 +65,9 @@ def animar(scene):
     e1_formulas.next_to(e1_intervalo, DOWN)
 
     scene.play(Write(e1_f_dx))
-    scene.wait(10)
+    scene.wait(7)
     scene.play(Write(e1_f_xi))
-    scene.wait(10)
+    scene.wait(7)
 
     scene.play(FadeOut(*scene.mobjects))
     scene.wait(2)
